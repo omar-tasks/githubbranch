@@ -95,10 +95,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+var array = [2, 4, 6];
 function multiplyArray(multArr) { //eslint-disable-line
+    var product = 1;
+
+    for (var i = 0; i < multArr.length; i++) {
+        product = product * multArr[i];
+
+    }
+    var concatination = `the numbers ${array} have a product of ${product}`;
+    var outarray = [product, concatination];
+
+    console.log(outarray);
 
 }
-
+multiplyArray(array);
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
