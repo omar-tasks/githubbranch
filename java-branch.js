@@ -15,7 +15,7 @@ function sum(a, b) {
     var array = [total , concatenation ];
     console.log(array);
 }
-sum(3, 6)
+sum(3, 6);
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -37,7 +37,7 @@ function multiply(a, b) { //eslint-disable-line
     var array = [total , concatenation ];
     console.log(array)
 }
-multiply(3, 8)
+multiply(3, 8);
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5, 9);
@@ -57,9 +57,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    var sum = a + b + c;
+    var multiply = a * b * c;
+    var con1 = `${a} and ${b} and ${c} sum to ${sum}`;
+    var con2 = `the product of ${a} and ${b} and ${c} is ${multiply}`;
+    var array = [sum, multiply, con1, con2];
+
+    console.log(array)
 
 }
-
+sumAndMultiply(2, 4, 8);
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4, 7, 5);
 
